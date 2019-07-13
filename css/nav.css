@@ -1,0 +1,77 @@
+
+:root {
+    --Nav-width: 7rem;
+    --Nav-height: 90vh;
+    --Nav-font-family: 'Noto Sans', sans-serif;
+    --Nav-Link-color: white;
+    --Nav-Item-margin-bottom: 1.5rem;
+    --Nav-Link-font-size: 1rem;
+    --Nav-padding-top: 2rem;
+
+    --Icon-color: inherit;
+    --Icon-font-size: 1.5rem;
+    --Icon-position: 10rem;
+    
+    
+}
+
+/*--------------ESTRUCTURA NAV--------------*/
+
+.nav{
+    width: var(--Nav-width);
+    height: var(--Nav-height);
+    font-family: var(--Nav-font-family);
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    text-align: center;
+    position: relative;
+}
+
+.fas {
+    display: block
+}
+
+.nav-link {
+    display: inline-block;
+}
+
+
+/*--------------ESTILOS NAV--------------*/
+
+
+.nav{
+    font-family: var(--Nav-font-family);
+    background-image: linear-gradient(to right, rgb(250, 71, 71) 10%, rgb(247, 114, 114));
+    padding-top: var(--Nav-padding-top);
+}
+
+.nav-item { 
+    list-style: none;
+    margin-bottom: var(--Nav-Item-margin-bottom);
+}
+
+
+.fas{
+    color: var(--Icon-color);
+    font-size: var(--Icon-font-size);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--Nav-Link-color);
+    font-size: var(--Nav-Link-font-size);
+    transition: 1s;
+}
+
+.nav-link:hover{
+    color: rgb(209, 208, 208)
+}
+
+
+ul li:nth-child(5){
+    top: var(--Icon-position);
+}
+

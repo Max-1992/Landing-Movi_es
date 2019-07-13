@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*------ESTRUCTURA PRINCIPAL-------*/
+
+.container {
+    display: grid;
+    grid-template-columns: 15% 85%;
+
+    grid-template-areas: "header header"
+                         "nav movies"
+                         "footer footer"
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.movies {
+    grid-area: movies;
+}
+
+.footer {
+    grid-area: footer;
+}
