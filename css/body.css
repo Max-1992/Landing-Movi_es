@@ -1,75 +1,74 @@
 
-:root {
-    --Arrow-font-size: 3rem;
 
-    --Img-Wrapper-width: 17rem;
-    --Img-Wrapper-height: 10rem;
-}
 
 /*------ESTRUCTURA BOADY-------*/
-.movies {
+
+.wrapper{
     display: grid;
-    grid-template-columns: repeat(3, 100%);
+    grid-template-columns: repeat(3, 100%)
 }
 
-
-.img-wrapper{
-    width: var(--Img-Wrapper-width);
-    height: var(--Img-Wrapper-height);
-}
-
-.img-movie{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/*------ESTILOS BOADY-------*/
-
-.movi-wrapper-row{
-    width: 100%;
+.wrapper-slider {
     height: 12rem;
     position: relative;
-
-   
-   
-   
+    
 }
 
-.movi-wrapper-row.uno{
-    background-color: #7be0ac;
-}
-
-.movi-wrapper-row.dos{
-    background-color: #b686e5;
-}
-
-.movi-wrapper-row.tres{
-    background-color: #f183a3;
-}
-
-
-
-/* ------Estilos Arrow Nav-------*/
-
-.nav-arrow {
+.arrow-left{
     position: absolute;
-    color: white;
-    text-decoration: none;
-
-}
-
-.nav-arrow i {
-    font-size: var(--Arrow-font-size);
-}
-
-.nav-arrow.left{
+    top: 0;
+    bottom: 0;
     left: 0;
-    top: 35%;
+    height: inherit;
+    width: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+
 }
 
-.nav-arrow.right{
+.arrow-right{
+    position: absolute;
+    top: 0;
+    bottom: 0;
     right: 0;
-    top: 35%;
+    height: inherit;
+    width: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: red; 
 }
 
+.left {
+    font-size: 3rem;
+}
+
+.right{
+    font-size: 3rem;
+}
+
+.arrow-link{
+    text-decoration: none;
+}
+
+
+.wrapper-slider.one {
+    background-color: green;
+}
+
+.wrapper-slider.two {
+    background-color: pink;
+}
+
+.wrapper-slider.three {
+    background-color: blue;
+}
+
+.title-category {
+    margin: 1rem 0;
+}

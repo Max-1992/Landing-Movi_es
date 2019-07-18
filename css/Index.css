@@ -9,7 +9,9 @@
 
 .container {
     display: grid;
-    grid-template-columns: 10% 1fr;
+    grid-template-columns:  1fr 11fr;
+
+    grid-column-gap: 5px;
 
     grid-template-areas: "header header"
                          "nav movies"
