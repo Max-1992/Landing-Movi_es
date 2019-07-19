@@ -1,7 +1,7 @@
 
 :root {
     --Nav-width: 7rem;
-    --Nav-height: 90vh;
+    --Nav-height: 100%;
     --Nav-font-family: 'Noto Sans', sans-serif;
     --Nav-Link-color: white;
     --Nav-Item-margin-bottom: 1.5rem;
@@ -10,7 +10,7 @@
 
     --Icon-color: inherit;
     --Icon-font-size: 1.5rem;
-    --Icon-position: 10rem;
+    --Icon-position: 20rem;
     
     
 }
@@ -73,5 +73,6 @@
 
 ul li:nth-child(5){
     top: var(--Icon-position);
+   
 }
 
