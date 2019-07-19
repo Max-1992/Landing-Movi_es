@@ -1,25 +1,17 @@
 
 
-
-/*------ESTRUCTURA BOADY-------*/
-
-/* .wrapper {
-
-} */
-
-.container{
+.wrapper{
     display: grid;
-    grid-template-columns: repeat(3, 100%);
-    
+    grid-template-columns: repeat(3, 100%)
 }
 
 .wrapper-slider {
-    
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(6, auto);
 
     align-content: center;
-    grid-column-gap: 0.5rem;
+
 
     height: 12rem;
     position: relative;
@@ -37,7 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background-color: red;
 
 }
 
@@ -53,7 +45,7 @@
     justify-content: center;
     align-items: center;
 
-    
+    background-color: red; 
 }
 
 .left {
