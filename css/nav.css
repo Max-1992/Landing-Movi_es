@@ -11,8 +11,12 @@
     --Icon-color: inherit;
     --Icon-font-size: 1.5rem;
     --Icon-position: 20rem;
-    
-    
+
+    --Z-back: -10;
+    --Z-normal: 1;
+    --Z-tooltip: 10;
+    --Z-fixed: 100;
+    --Z-modal: 1000;
 }
 
 /*--------------ESTRUCTURA NAV--------------*/
@@ -48,6 +52,7 @@
     padding-top: var(--Nav-padding-top);
 }
 
+
 .nav-item { 
     list-style: none;
     margin-bottom: var(--Nav-Item-margin-bottom);
@@ -76,3 +81,39 @@ ul li:nth-child(5){
    
 }
 
+@media screen and (max-width: 768px){
+
+    :root {
+        --Nav-height: 83.2rem;
+    }
+
+    .nav {
+        position: absolute;
+        top: 4.5rem;
+        left: -100%;
+
+        z-index: var(--Z-fixed);
+
+        transition: 0.5s;
+    }
+  
+    .active {
+        left: 0;
+    }
+
+    ul li:nth-child(5){
+        top: 0;
+       
+    }
+
+    .burger-menu{
+        cursor: pointer;
+    }
+}
+
+@media screen and ( max-width: 480px ){
+
+    :root {
+        --Nav-height: 131.2rem;
+    }
+}
